@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BOP tool</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-blue-grey">
+  <!-- Avatar image in top left corner -->
+  <a href="https://www.uexternado.edu.co/" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <img src="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/logo-uec.svg" class="w3-xxlarge" alt="UEC" style="width:100%;height:300%"></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fas fa-chalkboard-teacher w3-xxlarge"></i>
+    <p>COURSE</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fab fa-python w3-xxlarge"></i>
+    <p>APP</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button w3-black" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">CURSO</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PYTHON</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
+    <span class="w3-large w3-text-blue-grey w3-hide-small">Universidad Externado de Colombia</span>
+    <h1 class="w3-xxlarge w3-text-blue-grey"> BOP tool</h1>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-blue-grey">OBJECTIVES</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-blue-grey" >Some text</p>
+    <ul>
+      <li>objective_text_1</li>
+      <li>objective_text_2 </li>
+        <li>objective_text_3 </li>
+      <li>objective_text_4</li>
+    </ul>
+    <h2 class="w3-padding-16 w3-text-blue-grey">TOPICS</h2>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> topic_text_1.</p>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> topic_text_2</p>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> topic_text_3</p>
+    
+      <a href="#photos">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xxlarge"><i class="fab fa-python"></i></span><br>
+        BOP Tool
+      </div>
+      </a>
+
+    <script type="text/javascript" src="https://form.jotform.com/jsform/221373871603050"></script>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64"  id="contact">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">DOCENTE</span>
+    </div>
+
+    <div class=" w3-row w3-margin-bottom">
+      <div class=" w3-third w3-card-4" >
+        <img src="https://www.uexternado.edu.co/wp-content/uploads/2020/02/150.jpg" alt="Isaac Zainea" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-medium">Carlos Isaac Zainea Maya</h3>
+          <p class="w3-opacity">Matemático</p>
+          <p style="height: 150px"> <i>Intereses: </i> Topología de datos, Teoría de representaciones, Inteligencia artificial, Minería de datos, Teoría de autómatas, Teoría de computación, Álgebra geométrica.</p>
+          <p><a href="mailto:carlos.zainea@uexternado.edu.co" ><button class="w3-button w3-light-grey w3-block"> carlos.zainea@uexternado.edu.co </button></a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://izainea.github.io/">Isaac Zainea</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+    </div>
+</body>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<script type="text/javascript">
+  var ifr = document.getElementById("JotFormIFrame-211603153009644");
+  if (ifr) {
+    var src = ifr.src;
+    var iframeParams = [];
+    if (window.location.href && window.location.href.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+    }
+    if (src && src.indexOf("?") > -1) {
+      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+      src = src.substr(0, src.indexOf("?"))
+    }
+    iframeParams.push("isIframeEmbed=1");
+    ifr.src = src + "?" + iframeParams.join('&');
+  }
+  window.handleIFrameMessage = function(e) {
+    if (typeof e.data === 'object') { return; }
+    var args = e.data.split(":");
+    if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+    if (!iframe) { return; }
+    switch (args[0]) {
+      case "scrollIntoView":
+        iframe.scrollIntoView();
+        break;
+      case "setHeight":
+        iframe.style.height = args[1] + "px";
+        break;
+      case "collapseErrorPage":
+        if (iframe.clientHeight > window.innerHeight) {
+          iframe.style.height = window.innerHeight + "px";
+        }
+        break;
+      case "reloadPage":
+        window.location.reload();
+        break;
+      case "loadScript":
+        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+        var src = args[1];
+        if (args.length > 3) {
+          src = args[1] + ':' + args[2];
+        }
+        var script = document.createElement('script');
+        script.src = src;
+        script.type = 'text/javascript';
+        document.body.appendChild(script);
+        break;
+      case "exitFullscreen":
+        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+        break;
+    }
+    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+    }
+  };
+  window.isPermitted = function(originUrl, whitelisted_domains) {
+    var url = document.createElement('a');
+    url.href = originUrl;
+    var hostname = url.hostname;
+    var result = false;
+    if( typeof hostname !== 'undefined' ) {
+      whitelisted_domains.forEach(function(element) {
+        if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+          result = true;
+        }
+      });
+      return result;
+    }
+  }
+  if (window.addEventListener) {
+    window.addEventListener("message", handleIFrameMessage, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onmessage", handleIFrameMessage);
+  }
+</script>
+</html>
